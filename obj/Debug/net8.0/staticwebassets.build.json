@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "FrNsTAKZYFoJsB5F420C2wvtFo906va1J37ipHsRMjE=",
+  "Source": "InmobiliariaApi",
+  "BasePath": "_content/InmobiliariaApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "InmobiliariaApi\\wwwroot",
+      "Source": "InmobiliariaApi",
+      "ContentRoot": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\",
+      "BasePath": "_content/InmobiliariaApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\f639fa05-cf87-4fdd-8052-96547e841159.jpeg",
+      "SourceId": "InmobiliariaApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\",
+      "BasePath": "_content/InmobiliariaApi",
+      "RelativePath": "imagenes_inmuebles/f639fa05-cf87-4fdd-8052-96547e841159.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes_inmuebles\\f639fa05-cf87-4fdd-8052-96547e841159.jpeg"
+    }
+  ]
+}
