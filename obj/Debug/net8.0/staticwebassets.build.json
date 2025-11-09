@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FrNsTAKZYFoJsB5F420C2wvtFo906va1J37ipHsRMjE=",
+  "Hash": "E/zLjwIuGgS4XRjyx4++chjDL7UqBavIkeMA2Jp9grg=",
   "Source": "InmobiliariaApi",
   "BasePath": "_content/InmobiliariaApi",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg",
+      "SourceId": "InmobiliariaApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\",
+      "BasePath": "_content/InmobiliariaApi",
+      "RelativePath": "imagenes_inmuebles/61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes_inmuebles\\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg",
+      "SourceId": "InmobiliariaApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\",
+      "BasePath": "_content/InmobiliariaApi",
+      "RelativePath": "imagenes_inmuebles/cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes_inmuebles\\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg"
+    },
     {
       "Identity": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\f639fa05-cf87-4fdd-8052-96547e841159.jpeg",
       "SourceId": "InmobiliariaApi",

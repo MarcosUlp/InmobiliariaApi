@@ -1,5 +1,37 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagenes_inmuebles\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>InmobiliariaApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InmobiliariaApi</BasePath>
+      <RelativePath>imagenes_inmuebles/61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagenes_inmuebles\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagenes_inmuebles\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>InmobiliariaApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/InmobiliariaApi</BasePath>
+      <RelativePath>imagenes_inmuebles/cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagenes_inmuebles\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagenes_inmuebles\f639fa05-cf87-4fdd-8052-96547e841159.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>InmobiliariaApi</SourceId>

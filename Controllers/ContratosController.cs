@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace InmobiliariaApi.Controllers
 {
@@ -53,33 +54,31 @@ namespace InmobiliariaApi.Controllers
             });
         }
 
-        // 🔵 2. Listar contratos por inmueble (solo los del propietario autenticado)
+        // 🟠 Refactorizado: Listar contratos por inmueble (solo los del propietario autenticado, SIN pagos anidados)
         [HttpGet("inmueble/{id}")]
         public async Task<IActionResult> GetContratosPorInmueble(int id)
         {
             int propietarioId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
+            // 1. Validar que el inmueble pertenezca al propietario autenticado
             var inmueble = await _context.Inmuebles
                 .FirstOrDefaultAsync(i => i.InmuebleId == id && i.PropietarioId == propietarioId);
 
             if (inmueble == null)
                 return NotFound(new { mensaje = "Inmueble no encontrado o no pertenece al propietario autenticado." });
 
+            // 2. Obtener solo los datos del contrato
+            // Hemos eliminado el .Include(c => c.Pagos) y la selección anidada de Pagos
             var contratos = await _context.Contratos
-                .Include(c => c.Pagos)
                 .Where(c => c.InmuebleId == id)
                 .Select(c => new
                 {
                     c.ContratoId,
+                    c.InmuebleId,
                     c.FechaInicio,
                     c.FechaFin,
                     c.Monto,
-                    Pagos = c.Pagos.Select(p => new
-                    {
-                        p.PagoId,
-                        p.FechaPago,
-                        p.Importe
-                    }).ToList()
+                    // Ya no se incluyen Pagos. El cliente debe usar el endpoint de PagosController.
                 })
                 .ToListAsync();
 

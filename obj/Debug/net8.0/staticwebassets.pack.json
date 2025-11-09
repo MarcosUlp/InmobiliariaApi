@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg",
+      "PackagePath": "staticwebassets\\imagenes_inmuebles\\61e65c55-7c87-41f1-b448-fb3d2d57f2d3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg",
+      "PackagePath": "staticwebassets\\imagenes_inmuebles\\cd47ef5e-836c-44a0-8f08-54b3c1d236c3.jpg"
+    },
+    {
       "Id": "C:\\Users\\Lucia\\OneDrive\\Documentos\\InmobiliariaApi\\InmobiliariaApi\\wwwroot\\imagenes_inmuebles\\f639fa05-cf87-4fdd-8052-96547e841159.jpeg",
       "PackagePath": "staticwebassets\\imagenes_inmuebles\\f639fa05-cf87-4fdd-8052-96547e841159.jpeg"
     },

@@ -143,3 +143,4 @@ C:\Users\Lucia\OneDrive\Documentos\InmobiliariaApi\InmobiliariaApi\obj\Debug\net
 C:\Users\Lucia\OneDrive\Documentos\InmobiliariaApi\InmobiliariaApi\obj\Debug\net8.0\InmobiliariaApi.pdb
 C:\Users\Lucia\OneDrive\Documentos\InmobiliariaApi\InmobiliariaApi\obj\Debug\net8.0\InmobiliariaApi.genruntimeconfig.cache
 C:\Users\Lucia\OneDrive\Documentos\InmobiliariaApi\InmobiliariaApi\obj\Debug\net8.0\ref\InmobiliariaApi.dll
+C:\Users\Lucia\OneDrive\Documentos\InmobiliariaApi\InmobiliariaApi\obj\Debug\net8.0\InmobiliariaApi.sourcelink.json

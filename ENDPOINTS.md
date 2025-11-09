@@ -5,7 +5,7 @@
 - Tipo de envio: **(JSON)**
 
 - Body: {
-  "nommre": "Lucía Fernández",
+  "nombre": "Lucía Fernández",
   "email": "lucia@example.com",
   "telefono": "1123456789",
   "clave": "123"
@@ -95,6 +95,15 @@ imagen          foto-alquiler.jpeg
     "mensaje": "Inmueble agregado correctamente y deshabilitado por defecto."   
 }
 
+# 🔸2) Traer Inmueble por id
+- Metodo: **GET**
+- Ruta: `api/Inmuebles/{id}`
+- Tipo de envio: sin envio
+- Headers: Authorization barer <token>
+- Respuesta: Inmueble{
+
+}
+
 # 🔸2) Listar Inmuebles
 
 - Metodo: **GET**
@@ -105,7 +114,6 @@ imagen          foto-alquiler.jpeg
 }
 
 
-REVISAR ESTA PARTE PORQUE NO ESTARIA FUNCIONANDO:
 # 🔸3) Cambiar estado (habilitar/deshabilitar inmueble)
 
 - Metodo: **PUT**

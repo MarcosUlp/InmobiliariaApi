@@ -46,6 +46,8 @@ namespace InmobiliariaApi.Controllers
         }
 
         [HttpPost("login")]
+        // Modificación del método Login en AuthController.cs
+
         public async Task<IActionResult> Login([FromBody] PropietarioLoginDTO dto)
         {
             var propietario = await _context.Propietarios.FirstOrDefaultAsync(p => p.Email == dto.Email);
@@ -57,9 +59,9 @@ namespace InmobiliariaApi.Controllers
             // Crear token JWT
             var claims = new[]
             {
-                new Claim(ClaimTypes.NameIdentifier, propietario.PropietarioId.ToString()),
-                new Claim(ClaimTypes.Email, propietario.Email),
-                new Claim(ClaimTypes.Name, propietario.Nombre)
+            new Claim(ClaimTypes.NameIdentifier, propietario.PropietarioId.ToString()),
+            new Claim(ClaimTypes.Email, propietario.Email),
+            new Claim(ClaimTypes.Name, propietario.Nombre)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
@@ -73,11 +75,11 @@ namespace InmobiliariaApi.Controllers
                 signingCredentials: creds
             );
 
-            return Ok(new
-            {
-                token = new JwtSecurityTokenHandler().WriteToken(token),
-                propietario = new { propietario.PropietarioId, propietario.Nombre, propietario.Email }
-            });
+            // 🟢 CAMBIO APLICADO: Almacenamos el token como string y lo devolvemos directamente
+            string tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+
+            // Devolvemos la respuesta HTTP 200 (Ok) con la cadena del token como cuerpo.
+            return Ok(tokenString);
         }
     }
 }

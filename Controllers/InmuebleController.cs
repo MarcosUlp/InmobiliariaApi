@@ -3,7 +3,9 @@ using InmobiliariaApi.Dtos;
 using InmobiliariaApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore; // Necesario para FirstOrDefaultAsync
 using System.Security.Claims;
+using System.Threading.Tasks; // Necesario para Task
 
 namespace InmobiliariaApi.Controllers
 {
@@ -42,7 +44,35 @@ namespace InmobiliariaApi.Controllers
             return Ok(inmuebles);
         }
 
+        // 🔴 Nueva Funcionalidad: Obtener inmueble específico por ID
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetInmuebleById(int id)
+        {
+            int propietarioId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var inmueble = await _context.Inmuebles
+                // Filtramos por ID del inmueble y el ID del propietario autenticado
+                .Where(i => i.InmuebleId == id && i.PropietarioId == propietarioId)
+                .Select(i => new InmuebleDto // Usamos el DTO para la respuesta
+                {
+                    Id = i.InmuebleId,
+                    Direccion = i.Direccion,
+                    Ambientes = i.Ambientes,
+                    Precio = i.Precio,
+                    Habilitado = i.Habilitado,
+                    Imagen = i.Imagen
+                })
+                .FirstOrDefaultAsync();
+
+            if (inmueble == null)
+                return NotFound(new { mensaje = "Inmueble no encontrado o no pertenece al propietario." });
+
+            return Ok(inmueble);
+        }
+
+
         // 🟡 2. Agregar nuevo inmueble (por defecto deshabilitado)
+
         [HttpPost]
         public async Task<IActionResult> CrearInmueble([FromForm] CrearInmuebleDto dto)
         {
@@ -98,6 +128,5 @@ namespace InmobiliariaApi.Controllers
 
             return Ok(new { mensaje = $"Inmueble {(inmueble.Habilitado ? "habilitado" : "deshabilitado")} correctamente." });
         }
-
     }
 }
